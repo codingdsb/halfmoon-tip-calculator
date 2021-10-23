@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <!-- Halfmoon CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="
+        h-full
+        w-full
+        d-flex
+        flex-column
+        justify-content-center
+        align-items-center
+      "
+    >
+      <div class="h-half w-half border rounded shadow-lg">
+        <div class="d-flex justify-content-around align-items-center">
+          <h1 class="font-weight-bolder">Tip Calculator</h1>
+          <button class="btn btn-primary" onclick="toggleTheme()">
+            Toggle Dark Mode
+          </button>
+        </div>
+
+        <div
+          class="
+            d-flex
+            flex-column
+            align-items-center
+            h-three-quarter
+            justify-content-around
+          "
+        >
+          <input
+            type="number"
+            id="bill"
+            placeholder="Bill amount"
+            class="form-control form-control-lg w-three-quarter"
+          />
+          <input
+            type="number"
+            id="percentage"
+            placeholder="Tip percentage"
+            class="form-control form-control-lg w-three-quarter"
+          />
+
+          <p class="font-size-24 font-weight-semi-bold">
+            Tip amount is <span id="tip-amount">0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Halfmoon JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
